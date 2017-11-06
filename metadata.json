@@ -1,0 +1,92 @@
+
+[
+{
+"DRZAVA":"Drzava",
+"DR_OZNAKA":"Oznaka",
+"DR_NAZIV":"Naziv",
+"NM_OZNAKA":"Glavni grad",
+"DU_TIP":"Tip",
+"DRZ_DR_OZNAKA":"Nasledila drzavu",
+
+},
+
+{ 
+"DRZAVNO_URE_ENJE":"Državno uredenje",
+"DU_TIP":"Tip",
+"DU_NAZIV":"Naziv",
+
+},
+
+{
+"ISTORIJA_URE_ENJA":"Istorija uredenja",
+"DR_OZNAKA":"Drzava",
+"DU_TIP":"Tip",
+"DU_OD":"od",
+"DU_DO":"do",
+
+},
+
+{
+"NASELJENO_MESTO":"Naseljeno mesto",
+"DR_OZNAKA":"Država",
+"NM_OZNAKA":"Naseljeno mesto",
+"NM_NAZIV":"Naziv",
+"NM_PTT":"PTT",
+
+},
+
+{
+"OPSTINA":"Opština",
+"DR_OZNAKA":"Država",
+"OP_OZNAKA":"Opština",
+"OP_NAZIV":"Naziv",
+"NM_OZNAKA":"Mesto sedišta",
+
+},
+
+{
+"REGION":"Region",
+"RE_TIP":"Tip",
+"RE_OZNAKA":"Oznaka",
+"RE_NAZIV":"Naziv",
+"DR_OZNAKA":"Država regiona",
+"VR_OZNAKA":"Vrsta regiona",
+"NAS_DR_OZNAKA":"Država sedišta",
+"NM_OZNAKA":"Mesto sedišta",
+
+},
+
+{
+"SLOZENA_DRZAVA":"Složena država",
+"DRZ_DR_OZNAKA":"Složena država",
+"DR_OZNAKA":"Država clanica",
+"SD_OD":"od",
+"SD_DO":"do",
+
+},
+
+{
+"STRUKTURA_NASELJA":"Struktura naselja",
+"OPS_DR_OZNAKA":"Država",
+"OP_OZNAKA":"Opština",
+"NM_OZNAKA":"Naselje",
+
+},
+
+{
+"STRUKTURA_REGIONA":"Struktura regiona",
+"RE_TIP":"Tip složenog",
+"RE_OZNAKA":"Oznaka složenog",
+"REG_RE_TIP":"Tip regiona u sastavu",
+"REG_RE_OZNAKA":"Oznaka regiona u sastavu",
+
+},
+
+{
+"VRSTA_REGIONA":"Vrsta regiona",
+"VR_OZNAKA":"Oznaka",
+"VR_NAZIV":"Naziv",
+
+},
+
+]

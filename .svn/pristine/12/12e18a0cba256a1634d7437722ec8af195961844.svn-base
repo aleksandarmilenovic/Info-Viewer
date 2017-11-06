@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-06-12T18:31:37 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="REPORT1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f87fab3c-f1c8-4703-b847-c644a2cdae43">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ui-2015-tim201.4"/>
+	<queryString>
+		<![CDATA[Select * FROM STUDENTI]]>
+	</queryString>
+	<field name="BROJ_INDEKSA" class="java.math.BigDecimal"/>
+	<field name="STRUKA" class="java.lang.String"/>
+	<field name="PREZIME" class="java.lang.String"/>
+	<field name="IME_RODITELJA" class="java.lang.String"/>
+	<field name="IME" class="java.lang.String"/>
+	<field name="POL" class="java.lang.String"/>
+	<field name="JMBG" class="java.lang.String"/>
+	<field name="DATUM_RODJENJA" class="java.sql.Timestamp"/>
+	<field name="ADRESA" class="java.lang.String"/>
+	<field name="TELEFON" class="java.lang.String"/>
+	<group name="STRUKA">
+		<groupExpression><![CDATA[$F{STRUKA}]]></groupExpression>
+	</group>
+	<group name="POL">
+		<groupExpression><![CDATA[$F{POL}]]></groupExpression>
+	</group>
+	<group name="DATUM_RODJENJA">
+		<groupExpression><![CDATA[$F{DATUM_RODJENJA}]]></groupExpression>
+	</group>
+	<group name="ADRESA">
+		<groupExpression><![CDATA[$F{ADRESA}]]></groupExpression>
+	</group>
+	<group name="BROJ_INDEKSA">
+		<groupExpression><![CDATA[$F{BROJ_INDEKSA}]]></groupExpression>
+	</group>
+	<group name="PREZIME">
+		<groupExpression><![CDATA[$F{PREZIME}]]></groupExpression>
+	</group>
+	<group name="IME_RODITELJA">
+		<groupExpression><![CDATA[$F{IME_RODITELJA}]]></groupExpression>
+	</group>
+	<group name="IME">
+		<groupExpression><![CDATA[$F{IME}]]></groupExpression>
+	</group>
+	<group name="JMBG">
+		<groupExpression><![CDATA[$F{JMBG}]]></groupExpression>
+	</group>
+	<group name="TELEFON">
+		<groupExpression><![CDATA[$F{TELEFON}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="561" height="81" uuid="3e2038aa-53f0-4cae-bfdf-542d8f029679"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Izvestaj]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-1" width="551" height="41" uuid="5b2b9804-b4c0-46a9-a04d-8cf965a12998"/>
+				<textElement textAlignment="Center">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Studenti]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="129" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-2" width="561" height="131" uuid="a72bad1d-1ca4-43dc-aab5-478d61e68ece"/>
+			</textField>
+			<textField>
+				<reportElement x="10" y="0" width="100" height="30" uuid="c48c7208-b79b-4a8b-a6f8-29a5c5f0b729"/>
+				<textFieldExpression><![CDATA[$F{IME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="100" height="30" uuid="fefa92eb-fbc0-4b69-868d-5ed8c707028f"/>
+				<textFieldExpression><![CDATA[$F{PREZIME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="2368975f-1df2-4f39-a933-d5353389f7c2"/>
+				<textFieldExpression><![CDATA[$F{POL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="64" splitType="Stretch">
+			<textField>
+				<reportElement x="340" y="0" width="110" height="60" uuid="47119176-a4bd-470d-9416-2d0d1de1e249"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="450" y="0" width="111" height="64" uuid="596d1a34-ef3a-42e4-b3c6-61b7f95f2d5b"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="60" uuid="7a1046b5-eefd-428b-8230-31ee01c8d1fe"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="100" y="0" width="110" height="60" uuid="210f510f-caec-4175-b69a-5b3df4874e7c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

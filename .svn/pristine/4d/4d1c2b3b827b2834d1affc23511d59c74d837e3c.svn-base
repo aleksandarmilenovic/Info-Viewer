@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/actions/CloseAllFiles.java=UTF-8
+encoding//src/actions/CloseFile.java=UTF-8
+encoding//src/model/db/DBTree.java=UTF-8
+encoding//src/model/db/UIDBFile.java=UTF-8
+encoding//src/model/file/UIAbstractFile.java=UTF-8
+encoding//src/model/file/UISEKFile.java=UTF-8
+encoding//src/values/Icons.java=UTF-8
+encoding//src/view/FileViewDATABASE.java=UTF-8
+encoding//src/view/FileViewInd.java=UTF-8
+encoding//src/view/PrepareSortFile.java=UTF-8
+encoding/Drugi.jrxml=UTF-8
+encoding/PRVI.jrxml=UTF-8
+encoding/REPORT1.jrxml=UTF-8
+encoding/cetvrti.jrxml=UTF-8
+encoding/peti.jrxml=UTF-8
+encoding/treci.jrxml=UTF-8
